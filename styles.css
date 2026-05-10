@@ -359,30 +359,37 @@ a {
    QUOTE SECTIONS (Gatilhos Mentais)
    ============================================ */
 .quote-section {
-    padding: var(--space-2xl) 0;
-    background-color: var(--color-white);
+    padding: var(--space-xl) 0;
+    background: linear-gradient(135deg, var(--color-white) 0%, var(--color-background) 100%);
+    position: relative;
+    overflow: hidden;
 }
 
+
 .quote-section.quote-alt {
-    background-color: var(--color-background);
+    background: linear-gradient(135deg, var(--color-background) 0%, var(--color-white) 100%);
 }
 
 .quote {
     text-align: center;
+    position: relative;
+    padding: var(--space-md) var(--space-lg);
 }
 
+
 .quote-icon {
-    color: var(--color-secondary);
-    margin-bottom: var(--space-sm);
-    opacity: 0.6;
+    display: none;
 }
 
 .quote p {
     font-family: var(--font-serif);
-    font-size: clamp(1.5rem, 4vw, 2.25rem);
+    font-size: clamp(1.25rem, 4vw, 1.75rem);
     font-style: italic;
     color: var(--color-primary);
     letter-spacing: 0.5px;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 /* ============================================
@@ -501,6 +508,164 @@ a {
 
 .feature svg {
     color: var(--color-secondary);
+}
+
+/* ============================================
+   SERVICES DETAIL SECTION
+   ============================================ */
+.services-detail {
+    padding: var(--space-xl) 0;
+    background-color: var(--color-white);
+}
+
+@media (min-width: 768px) {
+    .services-detail {
+        padding: var(--space-2xl) 0;
+    }
+}
+
+.service-block {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+    margin-bottom: var(--space-xl);
+    padding: var(--space-md);
+    background-color: var(--color-background);
+    border-radius: var(--radius-lg);
+}
+
+.service-block:last-child {
+    margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+    .service-block {
+        flex-direction: row;
+        gap: var(--space-xl);
+        padding: 0;
+        background-color: transparent;
+        margin-bottom: var(--space-2xl);
+        align-items: center;
+    }
+
+    .service-block.reverse {
+        flex-direction: row-reverse;
+    }
+}
+
+.service-block-image {
+    flex: 1;
+    max-width: 100%;
+}
+
+@media (min-width: 768px) {
+    .service-block-image {
+        flex: 0 0 45%;
+        max-width: 45%;
+    }
+}
+
+.service-block-image img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: var(--radius-md);
+}
+
+@media (min-width: 768px) {
+    .service-block-image img {
+        height: 350px;
+        border-radius: var(--radius-lg);
+    }
+}
+
+.service-block-content {
+    flex: 1;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .service-block-content {
+        text-align: left;
+    }
+}
+
+.service-block-content h3 {
+    font-family: var(--font-serif);
+    font-size: 1.375rem;
+    color: var(--color-primary);
+    margin-bottom: var(--space-sm);
+}
+
+@media (min-width: 768px) {
+    .service-block-content h3 {
+        font-size: clamp(1.5rem, 4vw, 2rem);
+        margin-bottom: var(--space-md);
+    }
+}
+
+.service-block-content p {
+    color: var(--color-text-light);
+    line-height: 1.7;
+    margin-bottom: var(--space-sm);
+    font-size: 0.9375rem;
+}
+
+@media (min-width: 768px) {
+    .service-block-content p {
+        line-height: 1.8;
+        margin-bottom: var(--space-md);
+        font-size: 1rem;
+    }
+}
+
+.service-benefits {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+    .service-benefits {
+        flex-direction: row;
+        gap: 10px;
+        justify-content: flex-start;
+    }
+}
+
+.service-benefits li {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 14px;
+    background-color: var(--color-white);
+    border-radius: var(--radius-full);
+    color: var(--color-primary);
+    font-size: 0.8125rem;
+    font-weight: 500;
+    border: 1px solid var(--color-secondary);
+}
+
+.service-benefits li::before {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .service-benefits li {
+        padding: 8px 16px;
+        background-color: var(--color-background);
+        border-radius: var(--radius-full);
+        font-size: 0.9375rem;
+        margin-bottom: 0;
+        border: none;
+    }
+
+    .service-benefits li::before {
+        display: none;
+    }
 }
 
 /* ============================================
@@ -623,65 +788,6 @@ a {
 .portfolio {
     padding: var(--space-2xl) 0;
     background-color: var(--color-white);
-}
-
-/* Services Showcase */
-.services-showcase {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: var(--space-md);
-    margin-bottom: var(--space-xl);
-}
-
-@media (min-width: 768px) {
-    .services-showcase {
-        grid-template-columns: repeat(4, 1fr);
-    }
-}
-
-.showcase-item {
-    position: relative;
-    overflow: hidden;
-    border-radius: var(--radius-md);
-    box-shadow: var(--shadow-soft);
-    transition: var(--transition-normal);
-}
-
-.showcase-item:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-hover);
-}
-
-.showcase-item img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    display: block;
-    transition: var(--transition-normal);
-}
-
-@media (min-width: 768px) {
-    .showcase-item img {
-        height: 250px;
-    }
-}
-
-.showcase-item:hover img {
-    transform: scale(1.05);
-}
-
-.showcase-caption {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: var(--space-sm);
-    background: linear-gradient(transparent, rgba(131, 87, 75, 0.9));
-    color: var(--color-white);
-    font-family: var(--font-serif);
-    font-size: 0.9375rem;
-    font-style: italic;
-    text-align: center;
 }
 
 /* Carousel - Clean & Responsive */
@@ -821,6 +927,114 @@ a {
 
 .carousel-dots .dot.active {
     background-color: var(--color-primary);
+}
+
+/* Biossegurança */
+.biosecurity {
+    margin-top: var(--space-xl);
+    padding: var(--space-xl) var(--space-lg);
+    background: linear-gradient(135deg, var(--color-primary) 0%, #a16b5d 100%);
+    border-radius: var(--radius-lg);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.biosecurity::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    opacity: 0.5;
+}
+
+.biosecurity-content {
+    position: relative;
+    z-index: 1;
+}
+
+.biosecurity-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 72px;
+    height: 72px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: var(--radius-full);
+    color: var(--color-white);
+    margin-bottom: var(--space-md);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.biosecurity-icon svg {
+    width: 36px;
+    height: 36px;
+}
+
+.biosecurity h4 {
+    font-family: var(--font-serif);
+    font-size: 1.375rem;
+    color: var(--color-white);
+    margin-bottom: var(--space-sm);
+    letter-spacing: 0.02em;
+}
+
+.biosecurity p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1rem;
+    line-height: 1.8;
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+.biosecurity-badges {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-sm);
+    margin-top: var(--space-md);
+    flex-wrap: wrap;
+}
+
+.biosecurity-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: var(--radius-full);
+    color: var(--color-white);
+    font-size: 0.8125rem;
+    font-weight: 500;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.biosecurity-badge svg {
+    width: 14px;
+    height: 14px;
+}
+
+@media (min-width: 768px) {
+    .biosecurity {
+        padding: var(--space-2xl) var(--space-xl);
+    }
+
+    .biosecurity h4 {
+        font-size: 1.5rem;
+    }
+
+    .biosecurity p {
+        font-size: 1.0625rem;
+    }
+
+    .biosecurity-badge {
+        padding: 10px 20px;
+        font-size: 0.875rem;
+    }
 }
 
 /* ============================================
