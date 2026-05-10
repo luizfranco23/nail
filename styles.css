@@ -235,9 +235,15 @@ a {
     bottom: 0;
     overflow: hidden;
     z-index: 0;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
+}
+
+@media (min-width: 768px) {
+    .hero-waves {
+        display: flex;
+    }
 }
 
 .wave {
