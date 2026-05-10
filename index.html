@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nail Studio | Manicure de Alto Padrão</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="#" class="logo">Nail Studio</a>
+            <button class="menu-toggle" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <!-- Ondas Cintilantes -->
+        <div class="hero-waves">
+            <svg class="wave wave-1" viewBox="0 0 1440 320" preserveAspectRatio="none">
+                <path d="M0,192L48,197.3C96,203,192,213,288,229.3C384,245,480,267,576,250.7C672,235,768,181,864,181.3C960,181,1056,235,1152,234.7C1248,235,1344,181,1392,154.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            </svg>
+            <svg class="wave wave-2" viewBox="0 0 1440 320" preserveAspectRatio="none">
+                <path d="M0,64L48,96C96,128,192,192,288,208C384,224,480,192,576,165.3C672,139,768,117,864,128C960,139,1056,181,1152,186.7C1248,192,1344,160,1392,144L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            </svg>
+            <svg class="wave wave-3" viewBox="0 0 1440 320" preserveAspectRatio="none">
+                <path d="M0,256L48,240C96,224,192,192,288,181.3C384,171,480,181,576,197.3C672,213,768,235,864,224C960,213,1056,171,1152,154.7C1248,139,1344,149,1392,154.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            </svg>
+        </div>
+        <div class="hero-content container">
+            <p class="hero-subtitle">Manicure de Alto Padrão</p>
+            <h1 class="hero-title">Suas mãos merecem<br><span>arte e sofisticação</span></h1>
+            <p class="hero-description">Transformo cada detalhe em confiança. Experimente o cuidado que eleva sua autoestima.</p>
+            <a href="https://wa.me/5527988006800?text=Olá, gostaria de agendar um serviço de unha!" class="btn btn-primary" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                </svg>
+                Agendar Horário
+            </a>
+        </div>
+    </section>
+
+    <!-- Gatilho Mental 1 -->
+    <section class="quote-section">
+        <div class="container">
+            <blockquote class="quote">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor" class="quote-icon">
+                    <path d="M11.192 15.757c0-.88-.23-1.618-.69-2.217-.326-.412-.768-.683-1.327-.812-.55-.128-1.07-.137-1.54-.028-.16-.95.1-1.956.76-3.022.66-1.065 1.515-1.867 2.558-2.403L9.373 5c-.8.396-1.56.898-2.26 1.505-.71.607-1.34 1.305-1.9 2.094s-.98 1.68-1.25 2.69-.346 2.04-.217 3.1c.168 1.4.62 2.52 1.356 3.35.735.84 1.652 1.26 2.748 1.26.965 0 1.766-.29 2.4-.878.628-.576.94-1.365.94-2.368l.002.003zm9.124 0c0-.88-.23-1.618-.69-2.217-.326-.42-.768-.695-1.327-.825-.55-.13-1.07-.14-1.54-.03-.16-.94.09-1.95.75-3.02.66-1.06 1.514-1.86 2.557-2.4L18.49 5c-.8.396-1.555.898-2.26 1.505-.708.607-1.34 1.305-1.894 2.094-.556.79-.97 1.68-1.24 2.69-.273 1-.345 2.04-.217 3.1.165 1.4.615 2.52 1.35 3.35.732.833 1.646 1.25 2.742 1.25.967 0 1.768-.29 2.402-.876.627-.576.942-1.365.942-2.368v.01z"/>
+                </svg>
+                <p>O autocuidado que suas mãos merecem</p>
+            </blockquote>
+        </div>
+    </section>
+
+    <!-- Sobre Section -->
+    <section id="sobre" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="img/foto-de-perfil.PNG" alt="Foto de Perfil" class="profile-photo">
+                </div>
+                <div class="about-text">
+                    <h2 class="section-title">A Experiência</h2>
+                    <p class="about-description">
+                        Cada atendimento é uma experiência única de cuidado e atenção aos detalhes.
+                        Trabalho com técnicas refinadas e produtos de alta qualidade para garantir
+                        unhas impecáveis e duradouras.
+                    </p>
+                    <p class="about-description">
+                        Meu compromisso com a <strong>biossegurança</strong> é absoluto: todos os materiais
+                        são esterilizados em autoclave e descartáveis individuais são utilizados em cada sessão,
+                        garantindo sua saúde e tranquilidade.
+                    </p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                <path d="m9 12 2 2 4-4"></path>
+                            </svg>
+                            <span>Biossegurança Certificada</span>
+                        </div>
+                        <div class="feature">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                                <path d="M2 17l10 5 10-5"></path>
+                                <path d="M2 12l10 5 10-5"></path>
+                            </svg>
+                            <span>Produtos Premium</span>
+                        </div>
+                        <div class="feature">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            <span>Pontualidade</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços Section -->
+    <section id="servicos" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Menu de Serviços</h2>
+                <p class="section-subtitle">Escolha o tratamento perfeito para você</p>
+            </div>
+
+            <!-- Os serviços serão carregados dinamicamente do arquivo servicos.json -->
+            <div class="services-grid" id="services-container">
+                <!-- Carregando... -->
+            </div>
+
+            <div class="services-cta">
+                <p>Dúvidas sobre qual serviço escolher?</p>
+                <a href="https://wa.me/5527988006800?text=Olá, gostaria de saber mais sobre os serviços!" class="btn btn-secondary" target="_blank">
+                    Fale Comigo
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gatilho Mental 2 -->
+    <section class="quote-section quote-alt">
+        <div class="container">
+            <blockquote class="quote">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor" class="quote-icon">
+                    <path d="M11.192 15.757c0-.88-.23-1.618-.69-2.217-.326-.412-.768-.683-1.327-.812-.55-.128-1.07-.137-1.54-.028-.16-.95.1-1.956.76-3.022.66-1.065 1.515-1.867 2.558-2.403L9.373 5c-.8.396-1.56.898-2.26 1.505-.71.607-1.34 1.305-1.9 2.094s-.98 1.68-1.25 2.69-.346 2.04-.217 3.1c.168 1.4.62 2.52 1.356 3.35.735.84 1.652 1.26 2.748 1.26.965 0 1.766-.29 2.4-.878.628-.576.94-1.365.94-2.368l.002.003zm9.124 0c0-.88-.23-1.618-.69-2.217-.326-.42-.768-.695-1.327-.825-.55-.13-1.07-.14-1.54-.03-.16-.94.09-1.95.75-3.02.66-1.06 1.514-1.86 2.557-2.4L18.49 5c-.8.396-1.555.898-2.26 1.505-.708.607-1.34 1.305-1.894 2.094-.556.79-.97 1.68-1.24 2.69-.273 1-.345 2.04-.217 3.1.165 1.4.615 2.52 1.35 3.35.732.833 1.646 1.25 2.742 1.25.967 0 1.768-.29 2.402-.876.627-.576.942-1.365.942-2.368v.01z"/>
+                </svg>
+                <p>Transformando detalhes em confiança</p>
+            </blockquote>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Portfólio</h2>
+                <p class="section-subtitle">Alguns dos meus trabalhos favoritos</p>
+            </div>
+
+            <!-- Serviços em Destaque -->
+            <div class="services-showcase">
+                <div class="showcase-item">
+                    <img src="img/servico-fibra.jpg" alt="Aplicação de Fibra">
+                    <p class="showcase-caption">Aplicação de Fibra</p>
+                </div>
+                <div class="showcase-item">
+                    <img src="img/servico-tip.jpg" alt="Aplicação de Tip">
+                    <p class="showcase-caption">Aplicação de Tip</p>
+                </div>
+                <div class="showcase-item">
+                    <img src="img/servico-manutencao.jpg" alt="Manutenção">
+                    <p class="showcase-caption">Manutenção</p>
+                </div>
+                <div class="showcase-item">
+                    <img src="img/servico-remocao.jpg" alt="Remoção de Alongamento">
+                    <p class="showcase-caption">Remoção</p>
+                </div>
+            </div>
+
+            <!-- Carousel de Trabalhos -->
+            <div class="carousel">
+                <div class="carousel-track">
+                    <div class="carousel-slide">
+                        <img src="img/portfolio-01.jpg" alt="Trabalho 1">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="img/portfolio-02.jpg" alt="Trabalho 2">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="img/portfolio-03.jpg" alt="Trabalho 3">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="img/portfolio-04.jpg" alt="Trabalho 4">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="img/portfolio-05.jpg" alt="Trabalho 5">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="img/portfolio-06.jpg" alt="Trabalho 6">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="img/portfolio-07.jpg" alt="Trabalho 7">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="img/portfolio-08.jpg" alt="Trabalho 8">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="img/portfolio-09.jpg" alt="Trabalho 9">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="img/portfolio-10.jpg" alt="Trabalho 10">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="img/portfolio-11.jpg" alt="Trabalho 11">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="img/portfolio-12.jpg" alt="Trabalho 12">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="img/portfolio-13.jpg" alt="Trabalho 13">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="img/portfolio-14.jpg" alt="Trabalho 14">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="img/portfolio-15.jpg" alt="Trabalho 15">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="img/portfolio-rosa.jpg" alt="Unhas Rosa">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="img/portfolio-delicada.jpg" alt="Unha Delicada">
+                    </div>
+                </div>
+                <button class="carousel-btn carousel-prev" aria-label="Anterior">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg>
+                </button>
+                <button class="carousel-btn carousel-next" aria-label="Próximo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                </button>
+                <div class="carousel-dots"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gatilho Mental 3 -->
+    <section class="quote-section">
+        <div class="container">
+            <blockquote class="quote">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor" class="quote-icon">
+                    <path d="M11.192 15.757c0-.88-.23-1.618-.69-2.217-.326-.412-.768-.683-1.327-.812-.55-.128-1.07-.137-1.54-.028-.16-.95.1-1.956.76-3.022.66-1.065 1.515-1.867 2.558-2.403L9.373 5c-.8.396-1.56.898-2.26 1.505-.71.607-1.34 1.305-1.9 2.094s-.98 1.68-1.25 2.69-.346 2.04-.217 3.1c.168 1.4.62 2.52 1.356 3.35.735.84 1.652 1.26 2.748 1.26.965 0 1.766-.29 2.4-.878.628-.576.94-1.365.94-2.368l.002.003zm9.124 0c0-.88-.23-1.618-.69-2.217-.326-.42-.768-.695-1.327-.825-.55-.13-1.07-.14-1.54-.03-.16-.94.09-1.95.75-3.02.66-1.06 1.514-1.86 2.557-2.4L18.49 5c-.8.396-1.555.898-2.26 1.505-.708.607-1.34 1.305-1.894 2.094-.556.79-.97 1.68-1.24 2.69-.273 1-.345 2.04-.217 3.1.165 1.4.615 2.52 1.35 3.35.732.833 1.646 1.25 2.742 1.25.967 0 1.768-.29 2.402-.876.627-.576.942-1.365.942-2.368v.01z"/>
+                </svg>
+                <p>Exclusividade em cada atendimento</p>
+            </blockquote>
+        </div>
+    </section>
+
+    <!-- Contato Section -->
+    <section id="contato" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Agende seu Horário</h2>
+                <p class="section-subtitle">Estou pronta para cuidar de você</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                        <div>
+                            <h4>Localização</h4>
+                            <p>R. Maria de Oliveira Mares Guia, 31<br>Praia de Itaparica - Vila Velha/ES</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                        <div>
+                            <h4>Horário de Atendimento</h4>
+                            <p>Segunda a Sábado<br>9h às 19h</p>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="https://wa.me/5527988006800?text=Olá, gostaria de agendar um serviço de unha!" class="btn btn-primary btn-large" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                    </svg>
+                    Agendar pelo WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="logo">Nail Studio</a>
+                    <p>Manicure de Alto Padrão</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://instagram.com/katiagalindonail" class="social-link" aria-label="Instagram" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </a>
+                    <a href="https://wa.me/5527988006800?text=Olá, gostaria de agendar um serviço de unha!" class="social-link" aria-label="WhatsApp" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Nail Studio. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+{
+  "servicos": {
+    "unhas_simples": [
+      {
+        "id": 1,
+        "nome": "Mão",
+        "preco": 40.00,
+        "categoria": "Unhas Simples"
+      },
+      {
+        "id": 2,
+        "nome": "Pé",
+        "preco": 40.00,
+        "categoria": "Unhas Simples"
+      },
+      {
+        "id": 3,
+        "nome": "Revitalização no Pé",
+        "preco": 80.00,
+        "categoria": "Unhas Simples"
+      }
+    ],
+    "alongamentos_aplicacao": [
+      {
+        "id": 4,
+        "nome": "Postiças",
+        "preco": 130.00,
+        "categoria": "Alongamento"
+      },
+      {
+        "id": 5,
+        "nome": "Unhas de Gel",
+        "preco": 190.00,
+        "categoria": "Alongamento"
+      },
+      {
+        "id": 6,
+        "nome": "Unhas de Fibra",
+        "preco": 190.00,
+        "categoria": "Alongamento"
+      },
+      {
+        "id": 7,
+        "nome": "Banho de Gel",
+        "preco": 150.00,
+        "categoria": "Alongamento"
+      }
+    ],
+    "manutencao": [
+      {
+        "id": 8,
+        "nome": "Manutenção Unhas de Gel",
+        "preco": 150.00,
+        "categoria": "Manutenção"
+      },
+      {
+        "id": 9,
+        "nome": "Manutenção Unhas de Fibra",
+        "preco": 150.00,
+        "categoria": "Manutenção"
+      }
+    ],
+    "extras": [
+      {
+        "id": 10,
+        "nome": "Reposição de Unha (unidade)",
+        "preco": 15.00,
+        "categoria": "Extras"
+      },
+      {
+        "id": 11,
+        "nome": "Remoção de Unha",
+        "preco": 65.00,
+        "categoria": "Extras"
+      },
+      {
+        "id": 12,
+        "nome": "Troca de Formato",
+        "preco": 30.00,
+        "categoria": "Extras"
+      },
+      {
+        "id": 13,
+        "nome": "Unha Decorada",
+        "preco": 30.00,
+        "categoria": "Extras"
+      }
+    ]
+  }
+}
